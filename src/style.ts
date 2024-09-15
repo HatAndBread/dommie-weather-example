@@ -1,0 +1,48 @@
+export const colors = {
+  darkText: "#190933",
+  lightText: "#F4F4F4",
+  darkBg: "#B084CC",
+  lightBg: "#ACFCD9",
+};
+export default {
+  main: {
+    fontFamily: "Arial, sans-serif",
+    backgroundColor: colors.darkBg,
+    height: "100vh",
+  },
+  map: {
+    height: "80vh",
+    maxHeight: "340px",
+    maxWidth: "500px",
+    width: "80vw",
+    margin: "auto",
+    borderRadius: "8px",
+  },
+  closeButton: {
+    backgroundColor: "transparent",
+    color: colors.darkText,
+    border: "none",
+    cursor: "pointer",
+    position: "absolute",
+    right: "0",
+    top: "0",
+    fontSize: "20px",
+    padding: "8px",
+  },
+  weatherModal: {
+    position: "absolute",
+    zIndex: "999999",
+    width: "fit-content",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: colors.darkBg,
+    padding: "16px",
+    paddingTop: "32px",
+    borderRadius: "8px",
+    backgroundColor: colors.lightBg,
+    left: "50%",
+    top: "20px",
+    color: colors.darkText,
+    transform: "translateX(-50%)",
+  },
+};

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dommie Weather</title>
+    </head>
+    <body>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .loader {
+                width: 48px;
+                height: 48px;
+                border: 5px dotted #fff;
+                border-radius: 50%;
+                display: inline-block;
+                position: relative;
+                box-sizing: border-box;
+                animation: rotation 2s linear infinite;
+            }
+
+            @keyframes rotation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <div id="app"></div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
